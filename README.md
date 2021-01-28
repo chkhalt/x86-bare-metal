@@ -1,5 +1,5 @@
 # x86-bare-metal
-Minimal code to learn about x86 system programming. I have using it just to test some cpu features.
+Minimal code to learn about x86 system programming. For now it's just code to test some cpu resources.
 
 **build**  
 `$ make`  
