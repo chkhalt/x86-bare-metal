@@ -85,7 +85,7 @@ void assert_not_dir(const char *filepath)
 		exit(EXIT_FAILURE);
 	}
 
-	if (st.st_mode & S_IFDIR) {
+	if ((st.st_mode & (S_IFCHR | S_IFREG)) == 0) {
 		fprintf(stderr, "install: %s: invalid input\n", filepath);
 		exit(EXIT_FAILURE);
 	}
